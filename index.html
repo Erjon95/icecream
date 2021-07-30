@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <title>Welcome To Our Ice Cream Store</title>
+
+        <style>
+            .fa {
+                font-size: 30px;
+                width: 40px;
+                text-align: center;
+                text-decoration: none;
+                margin: 5px 2px;
+                border-radius: 30%;
+            }
+
+            /* Add a hover effect if you want */
+            .fa:hover {
+            opacity: 0.7;
+            }
+
+            /* Set a specific color for each brand */
+
+            /* Facebook */
+            .fa-facebook {
+            background: #3B5998;
+            color: white;
+            }
+
+            /* Twitter */
+            .fa-twitter {
+            background: #55ACEE;
+            color: white;
+            }
+
+            /*LinkedIn*/
+            .fa-linkedin {
+            background: #007bb5;
+            color: white;
+            }
+
+            /*YouTube*/
+            .fa-youtube {
+            background: #bb0000;
+            color: white;
+            }
+            
+            img{
+                width: 170px;
+                height: 150px;
+            }
+
+            table{
+                border: 1;
+                width: 250px;
+
+            }
+            body{
+                background-color: #f7f6f3;
+            }
+            span{
+                margin-left: 50px;
+            }
+            .backToTop{
+                margin-left: 50px;
+            }
+            main{
+                position: absolute;
+                margin-top: 300px;
+            }
+
+            #main1{
+                position: absolute;
+                left: 300px;
+            }
+            #main2{
+                position: absolute;
+                left: 300px;
+                top: 550px;
+            }
+
+            .connect{
+                position: absolute;
+                left: 1000px;
+            }
+            #top{
+                position: absolute;
+                left: 500px;
+            }
+            .footer{
+                position: absolute;
+                margin-top: 1300px;
+                background-color: darksalmon;
+            }
+            .video{
+                position: relative;
+                margin-left: -50px;
+            }
+            .categories{
+                border-right: 1px solid;
+                border-color:darkgrey;
+                -webkit-background-clip: padding-box;
+                background-clip: padding-box;
+                left: 50px;
+            }
+
+        </style>
+    </head>
+    <body>
+        <header id="top">
+            <div>
+                <h1 style="color: rgb(0, 255, 170);">The Ice Cream Store</h1>
+            </div>
+            <nav>
+            About Us
+            Products
+            Register
+            Customer Service
+        </nav>
+        <br><br>
+            
+        <div class="video">
+            <video width="400" height="200" muted controls autoplay loop id="vid">
+                <source src="images/movie.mp4" type="video/mp4">
+                <source src="images/movie.ogg" type="video/ogg">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+        </header>
+        
+        <main>
+            <div class="connect">
+                <h2>Connect With Us</h2>
+                <form action="#">
+                    <label for="email">Email:</label><br>
+                    <input type="email" id="email" name="email"><br>
+                    <label for="mobile">Mobile:</label><br>
+                    <input type="tel" id="mobile" name="mobile" placeholder="123-456-7890" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"><br>
+                    <label for="bday">Date of birth:</label><br>
+                    <input type="date" id="bday" name="bday"><br>
+                    <label for="annvrsry">Anniversary:</label><br>
+                    <input type="date" id="annvrsry" name="annvrsry"><br>
+                    <label for="feedback">Feedback:</label><br>
+                    <textarea id="feedback" name="feedback"></textarea><br>
+                    <input type="submit" value="Submit"><br><br>
+                </form>
+            </div><br><br><br>
+            
+            <div id="main1">
+                <h1>Flavors</h1>
+                <table>
+                    <tr>
+                        <td><div class="w3-card-4" style="width:50%;"><header class="w3-container w3-blue" style="width: 185%;">Vanilla $10</header><div class="w3-container"><img src="images/vanilla.jpg" alt="vanilla ice cream"></div></td>
+                        <td><div class="w3-card-4" style="width:50%;"><header class="w3-container w3-blue" style="width: 185%;">Chocolate $20</header><div class="w3-container"><img src="images/chocolate.jpg" alt="chocolate ice cream"></div></td>
+                        <td><div class="w3-card-4" style="width:50%;"><header class="w3-container w3-blue" style="width: 185%;">Banana $10</header><div class="w3-container"><img src="images/banana.jpg" alt="banana ice cream"></div></td>
+                    </tr>
+                    <tr>
+                        <td><div class="w3-card-4" style="width:50%;"><header class="w3-container w3-blue" style="width: 185%;">Strawberry $12</header><div class="w3-container"><img src="images/strawberry.jpg" alt="strawberry ice cream"></div></td>
+                        <td><div class="w3-card-4" style="width:50%;"><header class="w3-container w3-blue" style="width: 185%;">Mint $12</header><div class="w3-container"><img src="images/mint.jpg" alt="mint ice cream"></div></td>
+                        <td><div class="w3-card-4" style="width:50%;"><header class="w3-container w3-blue" style="width: 185%;">Peanut Butter $10</header><div class="w3-container"><img src="images/peanut butter.jpg" alt="peanut butter ice cream"></div></td>
+                    </tr>
+                </table>
+            </div>
+
+            <div id="main2">
+                <h1>Toppings</h1>
+                <table>
+                    <tr>
+                        <td><div class="w3-card-4" style="width:50%;"><header class="w3-container w3-blue" style="width: 185%;">Hot Fudge $2</header><div class="w3-container"><img src="images/hot fudge.jpg" alt="hot fudge topping"></div></td>
+                        <td><div class="w3-card-4" style="width:50%;"><header class="w3-container w3-blue" style="width: 185%;">Nuts $2</header><div class="w3-container"><img src="images/nuts.jpg" alt="nuts topping"></div></td>
+                        <td><div class="w3-card-4" style="width:50%;"><header class="w3-container w3-blue" style="width: 185%;">Caramel $2</header><div class="w3-container"><img src="images/caramel.jpg" alt="caramel topping"></div></td>
+                    </tr>
+                    <tr>
+                        <td><div class="w3-card-4" style="width:50%;"><header class="w3-container w3-blue" style="width: 185%;">Sprinkles $2</header><div class="w3-container"><img src="images/sprinkles.jpg" alt="sprinkles topping"></div></td>
+                        <td><div class="w3-card-4" style="width:50%;"><header class="w3-container w3-blue" style="width: 185%;">Whipped Cream $2</header><div class="w3-container"><img src="images/caramel.jpg" alt="whipped cream topping"></div></td>
+                        <td><div class="w3-card-4" style="width:50%;"><header class="w3-container w3-blue" style="width: 185%;">Cookie Dough $2</header><div class="w3-container"><img src="images/cookie dough.jpg" alt="cookie dough topping"></div></td>
+                    </tr>
+                </table>
+            </div>
+
+            <div class="categories">
+                <table>
+                    <table>
+                        <tr><td>Category</td></tr>
+                        <tr><td><input type="checkbox" id="economy" name="economy" value="economy">
+                            <label for="economy"> economy</label></td></tr>
+                        <tr><td><input type="checkbox" id="standard" name="standard" value="standard">
+                            <label for="standard"> standard</label></td></tr>
+                        <tr><td><input type="checkbox" id="premium" name="premium" value="premium">
+                            <label for="premium"> premium</label></td></tr>
+                        <tr><td><input type="checkbox" id="superPremium" name="superPremium" value="superPremium">
+                            <label for="superPremium"> super premium</label></td></tr> 
+                    </table><br>
+                    <table>
+                        <tr><td>Brand</td></tr>
+                        <tr><td><input type="checkbox" id="benJerry" name="benJerry" value="benJerry">
+                            <label for="economy"> Ben & Jerry's</label></td></tr>
+                        <tr><td><input type="checkbox" id="turkeyHill" name="turkeyHill" value="turkeyHill">
+                            <label for="turkeyHill"> Turkey Hill</label></td></tr>
+                        <tr><td><input type="checkbox" id="haagenDazs" name="haagenDazs" value="haagenDazs">
+                            <label for="haagenDazs"> Haagen Dazs</label></td></tr>
+                        <tr><td><input type="checkbox" id="baskinRobins" name="baskinRobins" value="baskinRobins">
+                            <label for="baskinRobins"> Baskin Robbins</label></td></tr>
+                        <tr><td><input type="checkbox" id="breyers" name="breyers" value="breyers">
+                            <label for="breyers"> Breyers</label></td></tr>     
+                    </table><br>
+                    <table>
+                        <tr><td>Price</td></tr>
+                        <tr><td><input type="radio" id="tenTwenty" name="price" value="tenTwenty">
+                            <label for="tenTwenty"> $10-$20</label></td></tr>
+                        <tr><td><input type="radio" id="twentyThirty" name="price" value="twentyThirty">
+                            <label for="twentyThirty"> $20-$30</label></td></tr>
+                        <tr><td><input type="radio" id="thirtyForty" name="price" value="thirtyForty">
+                            <label for="thirtyForty"> $30-$40</label></td></tr>
+                        <tr><td><input type="radio" id="fortyFifty" name="price" value="fortyFifty">
+                            <label for="fortyFifty"> $40-50</label></td></tr>
+                        <tr><td>
+                            <input type="number" id="min" name="min" placeholder="$Min" style="width: 60px; height: 20px;">
+                            <input type="number" id="min" name="min" placeholder="$Max" style="width: 60px; height: 20px;">
+                        </td></tr>     
+                    </table><br>
+                    <table>
+                        <tr><td>Availability</td></tr>
+                        <tr><td><input type="checkbox" id="outOfStock" name="outOfStock" value="outOfStock">
+                            <label for="outOfStock"> Include Out of Stock</label></td></tr>
+                    </table>
+                </table>
+            </div>
+        </main>
+
+        <br><br>
+
+        <footer class="footer">
+            <span>Contact Us</span>
+            <span>Privacy</span> 
+            <span>Accesibility</span> 
+            <span>Terms Of Use</span> 
+            <span>Cookie Preferences</span> 
+            <a href="#top" class="backToTop">Back To Top</a></div>
+            <a href="#" class="fa fa-facebook" style="margin-left: 50px;"></a>
+            <a href="#" class="fa fa-twitter"></a>
+            <a href="#" class="fa fa-linkedin"></a>
+            <a href="#" class="fa fa-youtube"></a>
+        </footer>
+    </body>
+
+</html>

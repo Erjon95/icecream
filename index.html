@@ -92,7 +92,7 @@
             }
             .footer{
                 position: absolute;
-                margin-top: 1300px;
+                margin-top: 1400px;
                 background-color: darksalmon;
             }
             .video{
@@ -105,6 +105,45 @@
                 -webkit-background-clip: padding-box;
                 background-clip: padding-box;
                 left: 50px;
+            }
+            .star{
+                margin: 50px 0;
+                position: relative;
+                display: block;
+                color: yellow;
+                width: 0px;
+                height: 0px;
+                border-right: 50px solid transparent;
+                border-bottom: 50px solid yellow;
+                border-left: 50px solid transparent;
+                transform: rotate(35deg);
+            }
+            .star:before {
+                border-bottom: 0px solid yellow;
+                border-left: 0px solid transparent;
+                border-right: 30px solid transparent;
+                position: absolute;
+                height: 0;
+                width: 0;
+                top: -45px;
+                left: -65px;
+                display: block;
+                content: '';
+                transform: rotate(-35deg);
+            }
+            .star:after {
+                position: absolute;
+                display: block;
+                color: yellow;
+                top: 3px;
+                left: -105px;
+                width: 0px;
+                height: 0px;
+                border-right: 100px solid transparent;
+                border-bottom: 70px solid yellow;
+                border-left: 100px solid transparent;
+                transform: rotate(-70deg);
+                content: '';
             }
 
         </style>
@@ -184,14 +223,25 @@
             <div class="categories">
                 <table>
                     <table>
+                        <tr><td>Specialty</td></tr>
+                        <tr><td><input type="radio" id="sugarFree" name="specialty" value="sugarFree">
+                            <label for="sugarFree"> sugar free</label></td></tr>
+                        <tr><td><input type="radio" id="lactoseFree" name="specialty" value="lactoseFree">
+                            <label for="lactoseFree"> lactose free</label></td></tr>
+                        <tr><td><input type="radio" id="reducedFat" name="specialty" value="reducedFat">
+                            <label for="reducedFat"> reduced fat</label></td></tr>
+                        <tr><td><input type="radio" id="gourmet" name="specialty" value="gourmet">
+                            <label for="gourmet"> gourmet</label></td></tr>     
+                    </table><br>
+                    <table>
                         <tr><td>Category</td></tr>
-                        <tr><td><input type="checkbox" id="economy" name="economy" value="economy">
+                        <tr><td><input type="radio" id="economy" name="category" value="economy">
                             <label for="economy"> economy</label></td></tr>
-                        <tr><td><input type="checkbox" id="standard" name="standard" value="standard">
+                        <tr><td><input type="radio" id="standard" name="category" value="standard">
                             <label for="standard"> standard</label></td></tr>
-                        <tr><td><input type="checkbox" id="premium" name="premium" value="premium">
+                        <tr><td><input type="radio" id="premium" name="category" value="premium">
                             <label for="premium"> premium</label></td></tr>
-                        <tr><td><input type="checkbox" id="superPremium" name="superPremium" value="superPremium">
+                        <tr><td><input type="radio" id="superPremium" name="category" value="superPremium">
                             <label for="superPremium"> super premium</label></td></tr> 
                     </table><br>
                     <table>
@@ -205,7 +255,17 @@
                         <tr><td><input type="checkbox" id="baskinRobins" name="baskinRobins" value="baskinRobins">
                             <label for="baskinRobins"> Baskin Robbins</label></td></tr>
                         <tr><td><input type="checkbox" id="breyers" name="breyers" value="breyers">
-                            <label for="breyers"> Breyers</label></td></tr>     
+                            <label for="breyers"> Breyers</label></td></tr>
+                        <tr><td><input type="checkbox" id="jenis" name="jenis" value="jenis">
+                            <label for="jenis"> Jeni's Splendid Ice Creams</label></td></tr>   
+                        <tr><td><input type="checkbox" id="vanleeuwen" name="vanleeuwen" value="vanleeuwen">
+                            <label for="vanleeuwen"> Van Leeuwen</label></td></tr> 
+                        <tr><td><input type="checkbox" id="saltStraw" name="saltStraw" value="saltStraw">
+                            <label for="saltStraw"> Salt & Straw</label></td></tr>
+                        <tr><td><input type="checkbox" id="ampleHillCreamery" name="ampleHillCreamery" value="ampleHillCreamery">
+                            <label for="ampleHillCreamery"> Ample Hill Creamery</label></td></tr>
+                        <tr><td><input type="checkbox" id="gelatoFiasco" name="gelatoFiasco" value="gelatoFiasco">
+                            <label for="gelatoFiasco"> Gelato Fiasco</label></td></tr> 
                     </table><br>
                     <table>
                         <tr><td>Price</td></tr>
@@ -221,6 +281,19 @@
                             <input type="number" id="min" name="min" placeholder="$Min" style="width: 60px; height: 20px;">
                             <input type="number" id="min" name="min" placeholder="$Max" style="width: 60px; height: 20px;">
                         </td></tr>     
+                    </table><br>
+                    <table>
+                        <tr><td>Rating</td></tr>
+                        <tr><td><input type="radio" id="one" name="rating" value="one">
+                            <label for="one"> <img src="images/onestar.jpg" alt="one star rating" style="width: 120px; height: 20px;"></label></td></tr>
+                        <tr><td><input type="radio" id="two" name="rating" value="two">
+                            <label for="two"> <img src="images/twostar.jpg" alt="two star rating" style="width: 120px; height: 20px;"></label></td></tr>
+                        <tr><td><input type="radio" id="three" name="rating" value="three">
+                            <label for="three"> <img src="images/threestar.jpg" alt="three star rating" style="width: 120px; height: 20px;"></label></td></tr>
+                        <tr><td><input type="radio" id="four" name="rating" value="four">
+                            <label for="four"> <img src="images/fourstar.jpg" alt="four star rating" style="width: 120px; height: 20px;"></label></td></tr>
+                        <tr><td><input type="radio" id="five" name="rating" value="five">
+                            <label for="five"> <img src="images/fivestar.jpg" alt="five star rating" style="width: 120px; height: 20px;"></label></td></tr>
                     </table><br>
                     <table>
                         <tr><td>Availability</td></tr>

@@ -1,0 +1,104 @@
+.fa {
+    font-size: 30px;
+    width: 40px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+    border-radius: 30%;
+}
+
+/* Add a hover effect if you want */
+.fa:hover {
+opacity: 0.7;
+}
+
+/* Set a specific color for each brand */
+
+/* Facebook */
+.fa-facebook {
+background: #3B5998;
+color: white;
+}
+
+/* Twitter */
+.fa-twitter {
+background: #55ACEE;
+color: white;
+}
+
+/*LinkedIn*/
+.fa-linkedin {
+background: #007bb5;
+color: white;
+}
+
+/*YouTube*/
+.fa-youtube {
+background: #bb0000;
+color: white;
+}
+
+img{
+    width: 170px;
+    height: 150px;
+}
+body{
+    background-color: #f7f6f3;
+}
+.backToTop{
+    margin-left: 50px;
+}
+#main{
+    display: flex;
+}
+
+/*#main1{
+    position: absolute;
+    left: 300px;
+}
+#main2{
+    position: absolute;
+    left: 300px;
+    top: 550px;
+}
+
+.connect{
+    position: absolute;
+    left: 1000px;
+}
+#top{
+    position: absolute;
+    left: 500px;
+}
+.footer{
+    position: absolute;
+    margin-top: 1400px;
+    background-color: darksalmon;
+}
+.video{
+    position: relative;
+    margin-left: -50px;
+}
+.categories{
+    border-right: 1px solid;
+    border-color:darkgrey;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+    left: 50px;
+}*/
+.logo{
+    width: 200px; 
+    height: 200px;
+}
+header{
+    display: flex;
+}
+span{
+    margin-left: 50px;
+}
+footer{
+    background-color: darksalmon;
+}
+#headerinfo{
+    margin-left: 300px;
+}
